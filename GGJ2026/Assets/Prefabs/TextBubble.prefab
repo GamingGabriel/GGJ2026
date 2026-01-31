@@ -32,8 +32,7 @@ Transform:
   m_LocalPosition: {x: -0.8277216, y: 2.9209332, z: -2.588544}
   m_LocalScale: {x: 3.1649, y: -0.0016204009, z: 1.0203}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 3320606134783203784}
+  m_Children: []
   m_Father: {fileID: 7425650609485681913}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!33 &5302571652648155037
@@ -58,7 +57,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueBubble: {fileID: 0}
   dialogueText: {fileID: 0}
-  dialogueWords: 
+  dialogueString: 
   buttonToPress: 0
 --- !u!23 &5054673550068585302
 MeshRenderer:
@@ -158,6 +157,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6785923828497582417}
+  - {fileID: 3320606134783203784}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8559790925066910319
@@ -185,16 +185,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8559790925066910319}
-  m_LocalRotation: {x: -0.70710707, y: -0, z: 0, w: 0.70710653}
-  m_LocalPosition: {x: 0, y: 0, z: -0.040118635}
-  m_LocalScale: {x: 0.042509403, y: -0.13186122, z: 83.0276}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -2.7000003}
+  m_LocalScale: {x: 0.13453801, y: 0.13453801, z: 0.13453801}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 6785923828497582417}
+  m_Father: {fileID: 7425650609485681913}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.015817702, y: -68.78326}
+  m_AnchoredPosition: {x: -0.77766013, y: 2.880005}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &842430338297221174
