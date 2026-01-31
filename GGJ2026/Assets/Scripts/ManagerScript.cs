@@ -1,8 +1,10 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class ManagerScript : MonoBehaviour
 {
+    BubbleScript[] bubbles; 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,7 +15,28 @@ public class ManagerScript : MonoBehaviour
     void Update()
     {
         string i = Input.inputString; 
-        Debug.Log(i);
+        bubbles = FindObjectsByType<BubbleScript>(FindObjectsSortMode.None);
+        //print(i);
+        if (bubbles.Length > 0)
+        {
+            //bool popped = false;
+            //print(bubbles.Length);
+            foreach(BubbleScript b in bubbles)
+            {
+                print(b.getButtonToPress());
+                //while (!popped)
+                //{
+                    if (i == b.getButtonToPress().ToString())
+                    {
+                        b.Pop();
+                        //popped = true;
+                    }
+               // }
+                
+            }
+        }
+        
+        
     }
 
 }

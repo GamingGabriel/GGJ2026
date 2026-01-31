@@ -14,7 +14,7 @@ public class BubbleScript : MonoBehaviour
     private string dialogueWords;
 
     [SerializeField]
-    private char BUTTONTOPRESS;
+    private char buttonToPress;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -27,5 +27,15 @@ public class BubbleScript : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void Pop()
+    {
+        Destroy(gameObject);
+    }
+
+    public char getButtonToPress()
+    {
+        return buttonToPress;
     }
 }
