@@ -5,10 +5,11 @@ using UnityEngine.InputSystem;
 public class ManagerScript : MonoBehaviour
 {
     BubbleScript[] bubbles; 
+    GameObject[] spawnPoints;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        spawnPoints = GameObject.FindGameObjectsWithTag("Spawnpoint");
     }
 
     // Update is called once per frame
