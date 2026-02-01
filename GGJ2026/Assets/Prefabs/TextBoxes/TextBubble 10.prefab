@@ -28,8 +28,8 @@ Transform:
   m_GameObject: {fileID: 2388553996794792774}
   serializedVersion: 2
   m_LocalRotation: {x: -0.70710707, y: -0, z: -0, w: 0.70710653}
-  m_LocalPosition: {x: 0.00000011931, y: -0.00000014119, z: 7.5e-14}
-  m_LocalScale: {x: 1.8525878, y: -0.0012766653, z: 1.064294}
+  m_LocalPosition: {x: 0.000000078041, y: -0.0000001075, z: 1.01e-13}
+  m_LocalScale: {x: 2.4945095, y: -0.0017190299, z: 1.4330719}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3320606134783203784}
@@ -262,7 +262,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: i asked chatgpt before my therapist
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

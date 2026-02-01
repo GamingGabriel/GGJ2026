@@ -251,7 +251,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26833404c30e01444a73e8c0f9ca6101, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 4
   bubbleScripts: []
   spawnPoints: []
   bubbles:
@@ -260,10 +259,29 @@ MonoBehaviour:
   - {fileID: 4235354140727624997, guid: cb6db0b10ea31454bb24169f12cf8a5d, type: 3}
   - {fileID: 4235354140727624997, guid: 57cd045c1d82fec4794b83e5a40846d4, type: 3}
   - {fileID: 4235354140727624997, guid: 844662878d3bb8e44a7e0011a5fad948, type: 3}
+  - {fileID: 4235354140727624997, guid: 7c0d45f2b11071b4fa326a5d98afea16, type: 3}
+  - {fileID: 4235354140727624997, guid: 5d7654598a7fc2e44954a9499ff51af0, type: 3}
+  - {fileID: 4235354140727624997, guid: 9b51bed41706a1b4f94f4f5ebb73c417, type: 3}
+  - {fileID: 4235354140727624997, guid: 643a2a7b606bab24f9a34f31def73a21, type: 3}
+  - {fileID: 4235354140727624997, guid: 2e53faeb369a1a34e925a58871aca812, type: 3}
+  - {fileID: 4235354140727624997, guid: 27ced69a55641ce4bb6131bba1063382, type: 3}
+  - {fileID: 4235354140727624997, guid: 2c91a8469fcd386469cd5fedc12b9959, type: 3}
+  - {fileID: 4235354140727624997, guid: 801160c348bd54048bf8e342fe3d7fe5, type: 3}
+  - {fileID: 4235354140727624997, guid: 4ba42fb515c611e4e85ebf4e95c15d39, type: 3}
+  - {fileID: 4235354140727624997, guid: ef16af1d2d4381d4f8e0cdc58f8a37d0, type: 3}
+  - {fileID: 4235354140727624997, guid: a910306adb5cda649ba6129cf7cf2481, type: 3}
+  - {fileID: 4235354140727624997, guid: 777c6dbc328262149bcf7afc1f159e8b, type: 3}
+  - {fileID: 4235354140727624997, guid: a1dcd80f87ca1bc448054e15e88b3a76, type: 3}
+  - {fileID: 4235354140727624997, guid: 90f8f873b9b7fe941b421bb89e0eb649, type: 3}
+  - {fileID: 4235354140727624997, guid: 18a7876e3cd96464fb963568a2e93f01, type: 3}
+  - {fileID: 4235354140727624997, guid: c1ef288dce5781c4084a27e896d4f793, type: 3}
+  spawnRate: 5
+  gameOver: 0
   lastSpawn: 0
   stressRate: 0.01
   stressReduction: 0.1
   difficulty: 0
+  DIFFICULTY_SCALAR: 0.0001
   stressBar: {fileID: 528273972}
   stress: 0
 --- !u!1001 &48482197
