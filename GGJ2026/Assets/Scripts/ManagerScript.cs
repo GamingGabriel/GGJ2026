@@ -1,6 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class ManagerScript : MonoBehaviour
 {
@@ -15,11 +16,33 @@ public class ManagerScript : MonoBehaviour
     [SerializeField]
     private float lastSpawn;
 
+    [SerializeField]
+    private float stressRate;
+
+    [SerializeField]
+    private float stressReduction;
+    
+    [SerializeField]
+    private float difficulty;
+
+     [Header("UI")]
+
+    [SerializeField]
+    Image stressBar;
+
+    [SerializeField]
+    float stress;
+
+    
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         spawnPoints = GameObject.FindGameObjectsWithTag("Spawnpoint");
         lastSpawn = 0;
+        stress = 0;
+        stressBar.fillAmount = stress;
     }
 
     // Update is called once per frame
@@ -42,6 +65,7 @@ public class ManagerScript : MonoBehaviour
                     {
                         if (!popped)
                         b.Pop();
+                        stress -= stressReduction;
                         popped = true;
                     }
                // }
@@ -56,6 +80,9 @@ public class ManagerScript : MonoBehaviour
             Instantiate(chosenBubble, chosenSpawn.transform);
             lastSpawn = Time.time;
         } 
+
+        stress += stressRate * bubbleScripts.Length * Time.deltaTime;
+        stressBar.fillAmount = stress;
     }
 
 }
