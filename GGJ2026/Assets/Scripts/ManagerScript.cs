@@ -11,6 +11,9 @@ public class ManagerScript : MonoBehaviour
     GameObject[] spawnPoints;
     [SerializeField]
     GameObject[] bubbles;
+
+    [SerializeField]
+    Rigidbody[] bodies;
     
     [Header("Game State")]
     [SerializeField]
@@ -52,6 +55,7 @@ public class ManagerScript : MonoBehaviour
         stressBar.fillAmount = stress;
         gameOver = false;
         difficulty = 1;
+        bodies = FindObjectsByType<Rigidbody>(FindObjectsSortMode.None);
     }
 
     // Update is called once per frame
@@ -81,9 +85,9 @@ public class ManagerScript : MonoBehaviour
                             }
                             popped = true;
                         }
-                    
                 }
             }
+            
             if (Time.time - lastSpawn > spawnRate)
             {
                 GameObject chosenSpawn = spawnPoints[(int)Random.Range(0, spawnPoints.Length -1)];
@@ -104,8 +108,18 @@ public class ManagerScript : MonoBehaviour
             if (stress >= 1)
             {
                 gameOver = true; 
+                GameOver();
             }
         }
     }
 
+
+    public void GameOver()
+    {
+        foreach(Rigidbody b in bodies)
+        {
+            b.useGravity = true;
+            b.AddForce((new Vector3(Random.Range(-1000, 1000), 50, 1000)));
+        }
+    }
 }
